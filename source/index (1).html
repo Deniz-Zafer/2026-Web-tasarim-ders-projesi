@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>To-Do List</h2>
+
+        <div id="errorBox" class="error-box">
+            Saat 00:00 - 23:59 arasında olmalıdır.
+        </div>
+
+        <div class="add-task-area">
+            <input type="text" id="taskInput" placeholder="Görev adı">
+            <input type="text" id="timeInput" placeholder="SS:DD" inputmode="numeric">
+            <button class="add-btn" onclick="addTask()">Ekle</button>
+        </div>
+
+        <div class="todo-list">
+            <div class="todo-header">
+                <span></span>
+                <span>Görev</span>
+                <span>Zaman</span>
+                <span></span>
+            </div>
+
+            <div id="taskContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
